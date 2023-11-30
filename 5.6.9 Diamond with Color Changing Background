@@ -1,0 +1,16 @@
+penup()
+def move_change_bg(color_name, x, y):
+    bgcolor(color_name)
+    goto(x, y)
+
+half_width = 200
+half_height = 200
+
+colors = ["MediumOrchid", "DarkOrchid", "DarkViolet", "BlueViolet", "RebeccaPurple"]
+
+move_change_bg(colors[0], half_width, 0)
+pendown()
+move_change_bg(colors[1], 0, half_height)
+move_change_bg(colors[2], -half_width, 0)
+move_change_bg(colors[3], 0, -half_height)
+move_change_bg(colors[4], half_width, 0)
