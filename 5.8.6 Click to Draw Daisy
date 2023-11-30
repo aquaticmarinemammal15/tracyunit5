@@ -1,0 +1,29 @@
+speed(8)
+def draw_petal(x, y):
+    color("white")
+    penup()
+    forward(25)
+    pendown()
+    begin_fill()
+    circle(150, 40)
+    left(135)
+    circle(150, 40)
+    end_fill()
+    penup()
+    color("black")
+    goto(0, 0)
+    left(175)
+
+# Call your commands below
+
+bgcolor("light blue")
+
+color("yellow")
+begin_fill()
+goto(0,-25)
+circle(25)
+end_fill()
+penup()
+pendown()
+goto(0,0)
+onclick(draw_petal)
