@@ -1,0 +1,19 @@
+def draw_circle(color_choice, x, y):
+    penup()
+    goto(x, y) 
+    color(color_choice)  
+    pendown()  
+    begin_fill()
+    circle(16.67)  
+    end_fill()
+
+speed('fastest')  
+
+colors = ['red', 'green', 'blue', 'yellow']
+
+x_position = -150 
+
+for i in range(8):
+    draw_circle(colors[i % 4], x_position, 0)
+    x_position += 33.34 
+hideturtle()
