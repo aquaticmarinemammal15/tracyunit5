@@ -1,0 +1,11 @@
+author = "John Green"
+title = "Looking for Alaska"
+print("I laughed and nodded my head at him (that's cool, right? the nod?) and")
+print("said, \"I'm Miles Halter. Nice to meet you.\"")
+print("\"Miles as in 'to go before I sleep'?\", he asked me.")
+print("\"Huh?\"")
+print("\"It's a Robert Frost poem. You've never read him?\"")
+print("I shook my head no.")
+print("\"Consider yourself lucky.\" He smiled.")
+font = ("Arial", 15, "bold")
+write("[" + title + " by " + author + "]", align="center", font=font)
