@@ -1,0 +1,13 @@
+def draw_circle(radius):
+    penup()
+    goto(0, -radius)
+    pendown()
+    circle(radius)
+def draw_dartboard():
+    radius = 25
+    for i in range(4):
+        draw_circle(radius)
+        radius += 25  
+speed(10)
+width(2) 
+draw_dartboard()
