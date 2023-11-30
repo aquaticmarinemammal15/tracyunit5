@@ -1,0 +1,14 @@
+draw_background() # This will load the background of the program
+sound = "chirp"
+
+# Write your commands below:
+
+goto(-70,10)
+write("CHIRP")
+
+goto(0,20)
+write("chirp")
+
+goto(70,0)
+write("CHIRP")
+hideturtle()
