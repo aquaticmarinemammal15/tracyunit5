@@ -1,0 +1,26 @@
+size = 400
+def draw_star():
+    seth(288)
+    begin_fill()
+    for i in range(5):
+        forward(size)
+        right(180-36)
+    end_fill()
+speed(10)
+penup()
+goto(0,200)
+pendown()
+color("#E1AA74")
+draw_star()
+size = 300
+penup()
+goto(0,150)
+pendown()
+color("#3876BF")
+draw_star()
+size = 200
+penup()
+goto(0,100)
+pendown()
+color("#192655")
+draw_star()
