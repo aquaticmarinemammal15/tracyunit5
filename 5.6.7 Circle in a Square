@@ -1,0 +1,28 @@
+def draw_square(side_length, color_choice):
+    penup()
+    goto(-side_length / 2, side_length / 2)
+    pendown()
+    color(color_choice)
+    begin_fill()
+    for _ in range(4):
+        forward(side_length)
+        right(90)
+    end_fill()
+
+def draw_circle(radius, color_choice):
+    penup()
+    goto(0, -radius)
+    pendown()
+    color(color_choice)
+    begin_fill()
+    circle(radius)
+    end_fill()
+
+radius = float(input("Enter the radius of the circle: "))
+side_length = radius * 2
+
+speed('fastest')
+hideturtle()
+
+draw_square(side_length, 'red')
+draw_circle(radius, 'blue')
