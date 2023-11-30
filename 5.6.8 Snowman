@@ -1,0 +1,32 @@
+def draw_circle(radius, color_choice):
+    color(color_choice)
+    begin_fill()
+    circle(radius)
+    end_fill()
+
+def draw_snowman(base_radius):
+    penup()
+    bottom_y = -200
+    goto(0, bottom_y)
+    pendown()
+    draw_circle(base_radius, 'white')
+    
+    middle_radius = base_radius * 0.6
+    penup()
+    middle_y = bottom_y + (base_radius + middle_radius)
+    goto(0, middle_y)
+    pendown()
+    draw_circle(middle_radius, 'white')
+
+    top_radius = middle_radius * 0.7
+    penup()
+    top_y = middle_y + (middle_radius + top_radius)
+    goto(0, top_y)
+    pendown()
+    draw_circle(top_radius, 'white')
+
+bgcolor('#DBF4FA')
+
+base_radius = float(input("Enter the radius for the bottom of the snowman: "))
+
+draw_snowman(base_radius)
