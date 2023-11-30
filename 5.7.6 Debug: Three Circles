@@ -1,0 +1,9 @@
+radius = 100
+penup()
+setposition(0, -100)
+
+for i in range(3):
+    pendown()
+    circle(radius)
+    penup()
+    radius = radius / 2
