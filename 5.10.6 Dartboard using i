@@ -1,0 +1,9 @@
+def draw_circle(radius):
+    penup()
+    goto(0, -radius)
+    pendown()
+    circle(radius)
+
+for i in range(1, 5):
+    radius = i * 25
+    draw_circle(radius)
