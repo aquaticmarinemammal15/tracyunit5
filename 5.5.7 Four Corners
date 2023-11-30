@@ -1,0 +1,27 @@
+def draw_square(square_length):
+    pendown()
+    for _ in range(4):
+        forward(square_length)
+        left(90)
+    penup()
+
+user_name = input("What's your name? ")
+print("Hi, {}! Welcome to Four Corners!".format(user_name))
+
+square_length = int(input("Enter the length for the sides of the square: "))
+
+speed(5)
+
+penup()
+setposition(-200, -200)
+pendown()
+draw_square(square_length)
+
+setposition(200 - square_length, -200)
+draw_square(square_length)
+
+setposition(200 - square_length, 200 - square_length)
+draw_square(square_length)
+
+setposition(-200, 200 - square_length)
+draw_square(square_length)
