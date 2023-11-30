@@ -1,0 +1,25 @@
+def draw_bar(height):
+    begin_fill()
+    penup()
+    forward(10) 
+    left(90)
+    forward(height)
+    left(90)
+    forward(10)
+    left(90)
+    forward(height)
+    left(90)
+    end_fill()
+    forward(25)  
+
+# Set starting position
+penup()
+goto(-60, 0)  
+pendown()
+
+# Draw the bars
+for i in range(1, 6):
+    height = i * 10 
+    draw_bar(height)
+
+hideturtle()
