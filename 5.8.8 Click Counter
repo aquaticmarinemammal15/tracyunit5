@@ -1,0 +1,33 @@
+penup()
+goto(0,150)
+write("Click Counter", align="center", font=("Arial", 40))
+def update_count(x, y):
+    global count
+    count += 1
+    clear_label()
+    write_count()
+speed(0)
+def clear_label():
+    penup()
+    goto(-20, 0)
+    pendown()
+    color("white")
+    begin_fill()
+    for _ in range(2):
+        forward(200)
+        left(90)
+        forward(100)
+        left(90)
+    end_fill()
+    color("black")  
+def write_count():
+    penup()
+    goto(0, 0)
+    pendown()
+    write("Count: " + str(count), font=("Arial", 20))
+count = 0
+penup()
+goto(0, 0)
+pendown()
+write_count()
+onclick(update_count)
