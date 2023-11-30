@@ -1,0 +1,19 @@
+def draw_square(side_length):
+    for _ in range(4):
+        forward(side_length)
+        left(90)
+def move_to_next_starting_position(side_length):
+    penup()
+    forward(2 * side_length) 
+    pendown()
+def draw_line_of_blocks():
+    side_length = 10
+    for _ in range(5):
+        draw_square(side_length)
+        if _ < 4:  
+            move_to_next_starting_position(side_length)
+        side_length += 10  
+penup()
+goto(-150, 0)
+pendown()
+draw_line_of_blocks()
