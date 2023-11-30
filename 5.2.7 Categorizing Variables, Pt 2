@@ -1,0 +1,53 @@
+draw_background() 
+
+var_1 = 10.0
+var_2 = 'hi'
+var_3 = "-46.5"
+var_4 = -3.14
+var_5 = 100.75
+var_6 = 'True'
+var_7 = 1
+var_8 = False
+
+
+
+
+"a"
+goto(50,50)
+write("10=")
+a = str(type('"10"')).split("'")[1]
+goto(65,50)
+write(a)
+#
+"b"
+goto(-50,50)
+write("'hi'=")
+b = str(type('"str"')).split("'")[1]
+goto(-35,50)
+write(b)
+#
+"c"
+goto(-50,-50)
+write("-46.5")
+c = str(type('"str"')).split("'")[1]
+
+#
+"d"
+goto(-70,-70)
+write("'-3.14")
+#
+"e"
+goto(70,70)
+write("10075")
+#
+"f"
+goto(50,-50)
+write("False")
+#
+"g"
+goto(-90,-90)
+write("1.0")
+#
+"h"
+goto(-70,70)
+write("'true'")
