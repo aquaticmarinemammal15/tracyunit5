@@ -1,0 +1,32 @@
+draw_background() # This will load the background for the program
+
+# Text from Haley
+text_1 = "OMG"
+# Text from Haley
+text_2 = "The funniest thing happened."
+# Text from me
+text_3 = "What?"
+# Text from Haley
+text_4 = "I farted in math class!"
+# Text from me
+text_5 = "HAHAHAHA!!"
+
+color("lightgreen")
+goto(90, 100)
+write(text_1, font=("Arial", 10), align="right")
+goto(90, 70)
+write(text_2, font=("Arial", 10), align="right")
+
+color("lightblue")
+goto(-90, 10)
+write(text_3, font=("Arial", 10))
+
+color("lightgreen")
+goto(90, -50)
+write(text_4, font=("Arial", 10), align="right")
+
+color("lightblue")
+goto(-90, -110)
+write(text_5, font=("Arial", 10))
+
+goto(0, -200)
